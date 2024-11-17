@@ -1,0 +1,32 @@
+.bg-body-tertiary {
+    background-color: #ffdddd !important;
+    color:#40004A !important;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* carrousel */
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    opacity: 1;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color:#FFDDDD;
+    opacity: 1;
+}
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #40004A;
+    opacity: 1;
+}
+.carousel-control-prev {
+    left: 7vh;
+}
+.carousel-control-next {
+    right: 7vh;
+}
