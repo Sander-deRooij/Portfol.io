@@ -7,6 +7,11 @@ footer {
     margin-top: auto;
 }
 
+/* navbar */
+.nav-item{
+font-size: 1.5rem;
+}
+
 /* carrousel */
 .carousel-control-prev,
 .carousel-control-next,
@@ -29,4 +34,38 @@ footer {
 }
 .carousel-control-next {
     right: 7vh;
+}
+.carousel-indicators .active {
+    background-color: #40004A
+  }
+.carousel-indicators button{
+    background-color: #FFDDDD;
+    transition: background-color 0.3s ease;
+}
+
+/* Snake */
+
+#gameContainer{
+    text-align: center;
+    margin-top: 3rem;
+}
+#gameBoard{
+    border: 3px solid;
+}
+#scoreText{
+    font-family: "Permanent Marker", cursive;
+    font-size: 100px;
+}
+#highScore{
+    font-family: "Permanent Marker", cursive;
+    font-size: 50px;
+}
+#resetBtn{
+    font-family: "Permanent Marker", cursive;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 15px;
+    cursor: pointer;
 }
