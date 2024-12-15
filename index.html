@@ -20,9 +20,14 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/mapscript.js"></script>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/map.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-10">
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -59,9 +64,9 @@
                   Projecten
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="project_1.html">Project 1</a></li>
-                  <li><a class="dropdown-item" href="project_2.html">Project 2</a></li>
-                  <li><a class="dropdown-item" href="project_3.html">Project 3</a></li>
+                  <li><a class="dropdown-item" href="project_1.html">Databank</a></li>
+                  <li><a class="dropdown-item" href="project_2.html">Netwerken</a></li>
+                  <li><a class="dropdown-item" href="project_3.html">Snake</a></li>
                   <li><a class="dropdown-item" href="project_4.html">Project 4</a></li>
                   <li><a class="dropdown-item" href="project_5.html">Project 5</a></li>
                   <li><a class="dropdown-item" href="project_6.html">Project 6</a></li>
@@ -79,29 +84,50 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-6">
-            <h1 class="mb-4">Welkom op mijn Portfolio</h1>
+            <h1 class="mb-4">Systeem- en netwerkbeheerder</h1>
             <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet commodi ipsa omnis incidunt soluta tempore cupiditate magni sapiente consequuntur! Ratione dicta totam rem recusandae corrupti deserunt a mollitia provident?    
+              Als systeem- en netwerkbeheerder zorg ik ervoor dat IT-infrastructuren optimaal functioneren. Mijn passie ligt in het beheren, beveiligen en verbeteren van netwerken en systemen, zodat bedrijven betrouwbaar kunnen werken. Door mijn kennis van diverse technologieën en protocollen ben ik in staat om problemen efficiënt op te lossen en proactief te handelen. Ik werk graag met besturingssystemen, netwerkconfiguraties en cloudoplossingen om stabiele omgevingen te garanderen. In dit portfolio toon ik projecten waarin ik complexe systemen heb opgezet, netwerken heb geoptimaliseerd en uitdagingen heb overwonnen. Mijn focus ligt altijd op betrouwbaarheid, veiligheid en prestaties binnen IT-infrastructuren.
             </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores recusandae accusamus ipsam corrupti assumenda, dolor laudantium eos doloremque in similique inventore sed incidunt eaque aspernatur excepturi sint. Ea, quas. Aliquid!
-            </p>
+          
+            
           </div>
-          <div class="col-md-6">
-            <img
-              src="images/placeholder.jpg"
-              class="img-fluid rounded"
-              alt="Placeholder image"
-            />
+          <div class="col-md-6" id="map">
           </div>
         </div>
       </div>
     
-      <div class="container py-5 mt-5">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis ut sapiente quia minima et perferendis odit officia eaque reprehenderit itaque deserunt vel, dolor, possimus fuga cum est libero a.</p>
-            <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, maxime velit quos recusandae nemo excepturi eligendi consequatur minus harum illo, commodi quis autem! Facilis aperiam corrupti sit sunt deleniti ut.</p>
+      <div>
+        <div class="container mt-5">
+          <h4 class="text-center mb-4">Mijn Hobby's</h4>
+          <div class="row g-4">
+            <!-- Hobby 1 -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="border rounded p-4 text-center bg-light">
+                <i class="bi bi-controller display-4 text-secondary"></i>
+                <p class="fw-semibold mt-2 mb-0">Gamen</p>
+              </div>
+            </div>
+            <!-- Hobby 2 -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="border rounded p-4 text-center bg-light">
+                <i class="bi bi-music-note-beamed display-4 text-secondary"></i>
+                <p class="fw-semibold mt-2 mb-0">Muziek</p>
+              </div>
+            </div>
+            <!-- Hobby 3 -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="border rounded p-4 text-center bg-light">
+                <i class="bi bi-camera display-4 text-secondary"></i>
+                <p class="fw-semibold mt-2 mb-0">Verzamelen</p>
+              </div>
+            </div>
+            <!-- Hobby 4 -->
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="border rounded p-4 text-center bg-light">
+                <i class="bi bi-book display-4 text-secondary"></i>
+                <p class="fw-semibold mt-2 mb-0">Lezen</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
